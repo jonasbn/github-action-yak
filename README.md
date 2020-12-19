@@ -21,6 +21,7 @@ Push some code and observe the Yak action analysing your files
     "Changelog.md": true,
     "LICENSE": true
 }
+
 ### Workflow: `.github/workflows/yak.yml`
 
 ```yaml
@@ -50,6 +51,7 @@ The action is based on a Docker image, which again is a utilization of the `yak`
 - `--nochecksums`, disables reading of the user specific checksums file, so you have to specify a repository specific checksums file
 
 In addition you can provide any of the below command line argurments.
+
 ### `yak-arguments`
 
 The arguments to the `yak` command.
