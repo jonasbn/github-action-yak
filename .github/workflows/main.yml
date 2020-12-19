@@ -1,8 +1,10 @@
-workflow "Push Workflow" {
-  resolves = ["Yak Action"]
-  on = "push"
-}
 
-action "Yak Action" {
-  uses = "./"
-}
+on:
+  push:
+    branches:
+      - main
+jobs:
+  Yak Action:
+    steps:
+    - name: Running Yak analysis
+      uses: ./action.yml
