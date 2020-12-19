@@ -7,7 +7,9 @@ echo "$@"
 echo "---------------------------------------------"
 echo ""
 
-$@
+PATH=$PATH:/usr/src/app/script
+
+yak --noconfig --nochecksums $@
 
 EXITCODE=$?
 
