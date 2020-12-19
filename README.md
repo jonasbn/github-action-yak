@@ -1,8 +1,8 @@
-# github-action-perl-dist-zilla
+# Yak GitHub Action
 
 An experimental GitHub Action for Yak
 
-The action utilizes a Docker image offering easy access to a containerized version of the commandline tool `yak` [a Perl based](https://github.com/jonasbn/perl-app-yak) Yak implementation.
+The action utilizes a Docker image offering easy access to a containerized version of the commandline tool `yak` the [Perl based](https://github.com/jonasbn/perl-app-yak) Yak implementation.
 
 The action is _alpha_ software and Yak is still in beta.
 
@@ -19,9 +19,9 @@ name: Yak Action
 on: push
 
 jobs:
-  dzil:
+  Yak:
     runs-on: ubuntu-latest
-    name: "yak analysis"
+    name: "Yak analysis"
     steps:
       - name: "Checkout repository"
         uses: actions/checkout@v2
