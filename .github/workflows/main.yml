@@ -7,5 +7,9 @@ jobs:
   Yak:
     runs-on: ubuntu-20.04
     steps:
-    - name: Running Yak analysis
+    -
+      name: Checkout
+      uses: actions/checkout@v2
+    -
+      name: Running Yak analysis
       uses: ./action.yml
