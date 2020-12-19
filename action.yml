@@ -7,7 +7,7 @@ inputs:
     required: false
 branding:
   color: green
-  icon: type
+  icon: check-square
 runs:
   using: docker
   image: 'docker://jonasbn/yak:latest'
