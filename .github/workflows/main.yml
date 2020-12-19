@@ -5,6 +5,7 @@ on:
       - main
 jobs:
   Yak Action:
+    runs-on: ubuntu-20.04
     steps:
     - name: Running Yak analysis
       uses: ./action.yml
