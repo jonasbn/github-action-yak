@@ -1,0 +1,8 @@
+workflow "Push Workflow" {
+  resolves = ["Yak Action"]
+  on = "push"
+}
+
+action "Yak Action" {
+  uses = "./"
+}

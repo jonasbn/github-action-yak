@@ -1,16 +1,15 @@
-name: "GitHub Action for Yak"
-description: 'Use Yak to yak shave your repository'
+name: "GitHub Yak Action"
+description: 'A Github Action that checks your repository for certains files'
 author: jonasbn
 inputs:
   yak-arguments:  # id of input
     description: 'Arguments for yak'
-    required: true
-    default: '--help'
+    required: false
 branding:
-  color: red
-  icon: zap
+  color: green
+  icon: type
 runs:
   using: docker
-  image: 'Dockerfile'
+  image: 'docker://jonasbn/yak:latest'
   args:
     - ${{ inputs.yak-arguments }}
