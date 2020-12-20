@@ -14,5 +14,5 @@ jobs:
       name: Running Yak analysis
       uses: ./
       with:
-        yak-arguments: --config .yak.yaml
+        yak-arguments: '--config=.yak.yaml'
 
