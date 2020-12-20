@@ -91,7 +91,7 @@ jobs:
       name: "Analysing repository using yak"
       uses: jonasbn/github-action-yak@main
       with:
-        yak-arguments: '--config .yak.yaml'
+        yak-arguments: '--config=.yak.yaml'
 ```
 
 The configuration can be used to specify the same parameters as available as command line options:
