@@ -3,7 +3,7 @@
 echo ""
 echo "Executing yak with the following arguments: "
 echo "---------------------------------------------"
-echo "$@"
+echo "yak --noconfig --nochecksums $@"
 echo "---------------------------------------------"
 echo ""
 
