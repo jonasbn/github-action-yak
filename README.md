@@ -16,11 +16,13 @@ Push some code and observe the Yak action analysing your files
 
 ### Checksums file: `.yaksums.json`
 
+```json
 {
     "README.md": true,
     "Changelog.md": true,
     "LICENSE": true
 }
+```
 
 ### Workflow: `.github/workflows/yak.yml`
 
