@@ -126,7 +126,7 @@ For more information and options, please see the [yak documentation][yak] or [Ya
 1. [Yak]
 1. [GitHub: perl-app-yak][yak]
 1. [DockerHub: Yak][dockerhub]
-1. [GitHub Actions][action]
+1. [GitHub Actions][actions]
 
 ## License
 
