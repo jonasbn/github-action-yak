@@ -121,6 +121,31 @@ If you want to avoid specifying what directories and paths to ignore in your con
 
 For more information and options, please see the [yak documentation][yak] or [Yak specification][Yak]
 
+## Tips
+
+### Getting Your Action Updated Automatically
+
+The _awesome_ tool dependabot lets you scan your used GitHub Marketplace Actions and lets you know if they are in need of an update.
+
+The update is proposed via a pull request, which can be accepted or declined, it will itself take care of deleting pull requests if these become irrelevant.
+
+You specify the configuration in the file: `.github/depedabot.yml` in your repository using this action - actually it scans all your actions.
+
+```yaml
+# Basic dependabot.yml file
+# REF: https://docs.github.com/en/code-security/supply-chain-security/keeping-your-actions-up-to-date-with-dependabot
+
+version: 2
+updates:
+  # Enable version updates for Actions
+  - package-ecosystem: "github-actions"
+    # Look for `.github/workflows` in the `root` directory
+    directory: "/"
+    # Check for updates once a week
+    schedule:
+      interval: "weekly"
+```
+
 ## Resources and References
 
 1. [Yak]
