@@ -2,7 +2,7 @@
 
 An _alpha_ version of a GitHub Action for [Yak] and Yak is still in _beta_.
 
-The action utilizes [a Docker image][dockerhub] offering easy access to a containerized version of the commandline tool `yak` the [Perl based Yak implementation][yak].
+The action utilizes [a Docker image][dockerhub] offering easy access to a containerized version of the command line tool `yak` the [Perl based Yak implementation][yak].
 
 ## Quick Start
 
