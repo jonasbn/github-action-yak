@@ -37,7 +37,7 @@ jobs:
     steps:
     -
       name: "Checkout repository"
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     -
       name: "Analysing repository using yak"
       uses: jonasbn/github-action-yak@main
