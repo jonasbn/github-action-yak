@@ -2,7 +2,7 @@
 
 An _alpha_ version of a GitHub Action for [Yak] and Yak is still in _beta_.
 
-The action utilizes [a Docker image][dockerhub] offering easy access to a containerized version of the command line tool `yak` the [Perl based Yak implementation][yak].
+The action utilizes [a Docker image][dockerhub] offering easy access to a containerized version of the command line tool `yak` the [Perl based Yak implementation][perl-app-yak].
 
 ## Quick Start
 
@@ -69,7 +69,7 @@ The arguments to the `yak` command.
 - `--noemoji`, disables emojis in output, even if configured or provided as `--emoji`, see above
 - `--about`, emits output on configuration and invocation and terminates with success
 
-For more information please see the [yak documentation][yak] or [Yak specification][Yak]
+For more information please see the [yak documentation][perl-app-yak] or [Yak specification][Yak]
 
 ## Configuration file
 
@@ -107,7 +107,7 @@ yakignores:
 - .git
 ```
 
-For more information and options, please see the [yak documentation][yak] or [Yak specification][Yak]
+For more information and options, please see the [yak documentation][perl-app-yak] or [Yak specification][Yak]
 
 ### Additional Configuration using `.yakignore`
 
@@ -119,7 +119,7 @@ If you want to avoid specifying what directories and paths to ignore in your con
 .git/
 ```
 
-For more information and options, please see the [yak documentation][yak] or [Yak specification][Yak]
+For more information and options, please see the [yak documentation][perl-app-yak] or [Yak specification][Yak]
 
 ## Tips
 
@@ -158,6 +158,6 @@ updates:
 This project is released under the MIT License, please see LICENSE file for details.
 
 [Yak]: https://jonasbn.github.io/yak
-[yak]: https://github.com/jonasbn/perl-app-yak
+[perl-app-yak]: https://github.com/jonasbn/perl-app-yak
 [dockerhub]: https://hub.docker.com/repository/docker/jonasbn/yak
 [actions]: https://docs.github.com/en/free-pro-team@latest/actions
