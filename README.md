@@ -6,7 +6,7 @@ The action utilizes [a Docker image][dockerhub] offering easy access to a contai
 
 ## Quick Start
 
-1. Add a `.yaksums.json` file to you directory
+1. Add a `.yaksums.json` file to your repository
 1. Specify what files you want Yak to keep an eye on (see the example below)
 1. Enable the action (see the example below)
 
