@@ -1,11 +1,16 @@
+name: Yak Analysis
 
 on:
   push:
     branches:
       - main
+
+permissions:
+  contents: read
+ 
 jobs:
   Yak:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
     -
       name: Checkout
@@ -15,4 +20,3 @@ jobs:
       uses: ./
       with:
         yak-arguments: '--config=.yak.yaml'
-
