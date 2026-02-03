@@ -121,6 +121,56 @@ If you want to avoid specifying what directories and paths to ignore in your con
 
 For more information and options, please see the [yak documentation][perl-app-yak] or [Yak specification][Yak]
 
+## Building and Publishing to DockerHub
+
+This GitHub Action uses a Docker image that needs to be built and published to DockerHub. The build process is optimized for the GitHub Actions platform.
+
+### Building the Docker Image
+
+Build the image for the `linux/amd64` platform (required for GitHub Actions):
+
+```bash
+docker build --platform linux/amd64 -t jonasbn/yak:latest .
+```
+
+To build a specific version:
+
+```bash
+docker build --platform linux/amd64 -t jonasbn/yak:1.0.0 -t jonasbn/yak:latest .
+```
+
+### Publishing to DockerHub
+
+First, log in to DockerHub:
+
+```bash
+docker login
+```
+
+Then push the image:
+
+```bash
+docker push jonasbn/yak:latest
+```
+
+If you tagged multiple versions:
+
+```bash
+docker push jonasbn/yak:1.0.0
+docker push jonasbn/yak:latest
+```
+
+### Multi-Platform Build (Optional)
+
+If you need to support multiple platforms, use Docker buildx:
+
+```bash
+docker buildx create --use
+docker buildx build --platform linux/amd64,linux/arm64 -t jonasbn/yak:latest --push .
+```
+
+**Note:** GitHub Actions runners primarily use `linux/amd64`, so this is the recommended platform for building this action's Docker image.
+
 ## Tips
 
 ### Getting Your Action Updated Automatically
