@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM jonasbn/yak:0.22.0@sha256:354e98cb28bb8eb7a6a73eff40687bc52512cc911261f64c65c03b9459f2151c
+FROM jonasbn/yak:0.23.0@sha256:fa6388385d604fa5eda857b996a399763cc220898d7646620866c53bcaa47121
 
 LABEL org.opencontainers.image.title="github-action-yak"
 LABEL org.opencontainers.image.description="GitHub Action for yak"
