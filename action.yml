@@ -10,6 +10,6 @@ branding:
   icon: check-square
 runs:
   using: docker
-  image: 'docker://jonasbn/yak:latest'
+  image: 'docker://jonasbn/yak@sha256:89f02b4f7c3a00c0944c9da725627f6ff55216063fb22e2c13a94a52536a2070' # jonasbn/yak:latest as of 2026-11-11
   args:
     - ${{ inputs.yak-arguments }}
